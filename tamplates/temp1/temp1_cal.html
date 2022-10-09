@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<body>
+
+{{welcome}}
+
+<form action="add" method="post">{% csrf_token %}
+
+    Enter 1: <input type="text", name="first">
+   Enter 2: <input type="text", name="second">
+    <input type="submit" name="click"><br>
+{{result}}
+
+</form>
+</body>
+</html>
